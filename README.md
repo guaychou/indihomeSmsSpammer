@@ -1,6 +1,7 @@
 ## SMS Indihome
 
-This function create for educational purpose only not offending many of them
+Discalimer:
+**This function create for educational purpose only not offending any of them**
 
 ### How to install : 
 
