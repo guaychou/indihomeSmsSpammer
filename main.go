@@ -8,12 +8,19 @@ import (
    "log"
    "os"
    "sync"
+   figure "github.com/common-nighthawk/go-figure"
 )
 
 const url="https://www.indihome.co.id/verifikasi-layanan/login-otp"
 func main(){
    var token string
    var wg sync.WaitGroup
+   fmt.Println("===========================================================================================================================================")
+   myfigure:=figure.NewFigure("SMS Spammer Indihome","pebbles",true)
+   myfigure.Print()
+   fmt.Println("                                                                                                   by: LordChou")
+   fmt.Println("===========================================================================================================================================")
+
    nomerPtr := flag.String("nomer", "", "Nomer HP yang ingin dispam \nContoh: 08xxxxxxxxx")
    countPtr :=flag.Int("count",1,"Berapa kali di spam \nContoh: 1/2/3/4/5")
    flag.Parse()
